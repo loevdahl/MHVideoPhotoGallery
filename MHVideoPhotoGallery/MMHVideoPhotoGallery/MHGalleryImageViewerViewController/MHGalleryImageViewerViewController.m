@@ -64,8 +64,7 @@
     [self setNeedsStatusBarAppearanceUpdate];
     
     
-    [UIApplication.sharedApplication setStatusBarStyle:self.galleryViewController.preferredStatusBarStyleMH
-                                              animated:YES];
+//    [UIApplication.sharedApplication setStatusBarStyle:self.galleryViewController.preferredStatusBarStyleMH animated:YES];
     
     [self.pageViewController.view.subviews.firstObject setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
 }
@@ -876,7 +875,7 @@
                 }
                 
                 if (progressY > 0.35 || velocityY >700) {
-                    MHStatusBar().alpha = MHShouldShowStatusBar() ? 1 : 0;
+//                    MHStatusBar().alpha = MHShouldShowStatusBar() ? 1 : 0;
                     [self.interactiveTransition finishInteractiveTransition];
                 }else {
                     [self setNeedsStatusBarAppearanceUpdate];
@@ -1535,7 +1534,7 @@
     if (!MHShouldShowStatusBar()) {
         alpha = 0;
     }
-    MHStatusBar().alpha = alpha;
+//    MHStatusBar().alpha = alpha;
 }
 
 -(void)handelImageTap:(UIGestureRecognizer *)gestureRecognizer{
